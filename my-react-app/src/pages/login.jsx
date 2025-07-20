@@ -8,11 +8,11 @@ function Login() {
       className="w-screen h-screen bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${schoolImg})` }}
     >
-      <div className="bg-white w-full max-w-3xl px-4 sm:px-8 md:px-10 rounded-3xl py-5 shadow-lg flex flex-col md:flex-row justify-between items-center">
+      <div className="bg-white w-full max-w-3xl px-4 sm:px-8 md:px-10 rounded-3xl py-5 shadow-lg flex flex-col md:flex-row justify-between items-center gap-8">
         {/* Form bên trái */}
         <div className="w-full md:w-1/2">
           <div className="flex items-center justify-between py-5">
-            <p className="text-3xl text-slate-900">Đăng nhập đi Tiến bịp</p>
+            <p className="text-3xl text-slate-900">Đăng nhập</p>
             <img src={logo} alt="Logo" className="h-12" />
           </div>
 
