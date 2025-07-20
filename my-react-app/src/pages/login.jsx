@@ -12,7 +12,7 @@ function Login() {
         {/* Form bên trái */}
         <div className="w-full md:w-1/2">
           <div className="flex items-center justify-between py-5">
-            <p className="text-3xl text-slate-900">Đăng nhập</p>
+            <p className="text-3xl text-slate-900">Đăng nhập đi Tiến bịp</p>
             <img src={logo} alt="Logo" className="h-12" />
           </div>
 
