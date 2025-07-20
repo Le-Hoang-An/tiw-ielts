@@ -1,9 +1,14 @@
-function Forgot(){
-    return(
-        <div className="flex justify-center items-center h-screen w-screen bg-gray-50">
-            <div className="text-2xl font-semibold">Quên thì thua rồi</div>
-        </div>
-    );
+import BackgroundLayout from "../components/BackgroundLayout";
+import schoolImg from "../assets/school_img.png";
+
+function Forgot() {
+  return (
+    <BackgroundLayout bgImage={schoolImg}>
+      <div className="text-2xl font-semibold bg-white rounded-2xl px-8 py-6 shadow-lg">
+        Quên thì thua rồi
+      </div>
+    </BackgroundLayout>
+  );
 }
 
 export default Forgot;
