@@ -3,6 +3,7 @@ import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import img_hoc from "../assets/img_hoc.avif";
 import { Link } from "react-router-dom";
+import { loginclick } from "../function_js/main";
 
 function Login() {
   return (
@@ -34,7 +35,7 @@ function Login() {
           <Link to="/forgot" className="block mb-2 text-yellow-400">
             Quên mật khẩu ?
           </Link>
-          <button className="w-full bg-yellow-400 py-3 rounded-xl">
+          <button className="w-full bg-yellow-400 py-3 rounded-xl" onClick={loginclick}>
             Đăng nhập
           </button>
           <Link to="/register" className="flex gap-2 items-center justify-center pt-3 pb-12">
