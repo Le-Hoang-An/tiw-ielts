@@ -3,6 +3,7 @@ import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import { Link } from "react-router-dom";
 import img_hoc from "../assets/img_hoc.avif";
+import { click } from "../function_js/main";
 
 function Register() {
   return (
@@ -69,7 +70,7 @@ function Register() {
             <div></div>
           </div>
           <div className="">
-            <button className="w-full bg-yellow-400 h-12 rounded-lg">
+            <button className="w-full bg-yellow-400 h-12 rounded-lg" onClick={click}>
               Đăng ký
             </button>
             <Link to="/" className="flex gap-2 items-center justify-center pt-8 pb-12">
