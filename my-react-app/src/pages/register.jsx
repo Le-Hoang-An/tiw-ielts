@@ -72,7 +72,7 @@ function Register() {
             <button className="w-full bg-yellow-400 h-12 rounded-lg">
               Đăng ký
             </button>
-            <Link to="/login" className="flex gap-2 items-center justify-center pt-8 pb-12">
+            <Link to="/" className="flex gap-2 items-center justify-center pt-8 pb-12">
               Bạn đã có tài khoản?{" "}
               <a href="#" className="text-blue-600 font-bold">
                 ĐĂNG NHẬP
