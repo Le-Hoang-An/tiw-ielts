@@ -24,14 +24,14 @@ function Login() {
             type="text"
             name="sdt"
             id=""
-            className="w-full border h-9 mb-5 rounded-md pl-3"
+            className="w-full border h-10 mb-5 rounded-md pl-3"
           />
           <p className="pb-2">
             Mật khẩu <span className="text-red-500">*</span>
           </p>
           <input
             type="password"
-            className="block w-full border h-9 mb-5 pl-3 rounded-md"
+            className="block w-full border h-10 mb-5 pl-3 rounded-md "
           />
           <Link to="/forgot" className="block mb-2 text-yellow-400">
             Quên mật khẩu ?
