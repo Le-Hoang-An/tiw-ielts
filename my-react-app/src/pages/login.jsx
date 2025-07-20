@@ -1,6 +1,7 @@
 import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import img_hoc from "../assets/img_hoc.avif";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -32,9 +33,9 @@ function Login() {
             type="password"
             className="block w-full border h-9 mb-5 pl-3 rounded-md"
           />
-          <a href="#" className="block mb-2 text-yellow-400">
+          <Link to="/forgot" className="block mb-2 text-yellow-400">
             Quên mật khẩu ?
-          </a>
+          </Link>
           <button className="w-full bg-yellow-400 py-3 rounded-xl">
             Đăng nhập
           </button>
