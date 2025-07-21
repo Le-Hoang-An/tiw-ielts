@@ -8,7 +8,7 @@ function Header() {
     <>
       <div className="fixed w-full border shadow-lg pb-2">
         <div className="flex justify-between px-3 mt-3">
-          <img src={logo} alt="Logo" className="h-12 px-3 mt-3" />
+          <img src={logo} alt="Logo" className="h-12 px-3 mt-3 cursor-pointer" />
           <p className="px-3 mt-3 flex justify-center items-center text-lg font-bold">
             Chào mừng bạn đến với website luyện thi IELTS
           </p>
