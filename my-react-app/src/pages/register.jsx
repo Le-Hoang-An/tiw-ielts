@@ -3,7 +3,7 @@ import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import { Link } from "react-router-dom";
 import img_hoc from "../assets/img_hoc.avif";
-import { click, regclick } from "../function_js/main";
+import { loginclick, regclick } from "../function_js/main";
 
 function Register() {
   return (
