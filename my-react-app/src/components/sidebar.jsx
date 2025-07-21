@@ -115,7 +115,7 @@ function Sidebar() {
       <hr className="w-full" />
       <a
         href="#"
-        className="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded mb-1"
+        className="flex items-center p-2 text-gray-700 hover:bg-gray-200 rounded mb-5"
       >
         Danh sách đánh giá
       </a>
