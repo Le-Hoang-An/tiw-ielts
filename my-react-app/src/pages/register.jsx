@@ -3,7 +3,7 @@ import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import { Link } from "react-router-dom";
 import img_hoc from "../assets/img_hoc.avif";
-import { loginclick, regclick } from "../function_js/main";
+import { regclick } from "../function_js/main";
 
 function Register() {
   return (
@@ -70,10 +70,16 @@ function Register() {
             <div></div>
           </div>
           <div className="">
-            <button className="w-full bg-yellow-400 h-12 rounded-lg" onClick={regclick}>
+            <button
+              className="w-full bg-yellow-400 h-12 rounded-lg mt-7"
+              onClick={regclick}
+            >
               Đăng ký
             </button>
-            <Link to="/" className="flex gap-2 items-center justify-center pt-8 pb-12">
+            <Link
+              to="/"
+              className="flex gap-2 items-center justify-center pt-8 pb-12"
+            >
               Bạn đã có tài khoản?{" "}
               <a href="#" className="text-blue-600 font-bold">
                 ĐĂNG NHẬP
