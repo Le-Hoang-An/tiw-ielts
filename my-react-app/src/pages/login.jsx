@@ -3,12 +3,30 @@ import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import img_hoc from "../assets/img_hoc.avif";
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+
+const sampleAccounts = [
+  { username: "user1", password: "123456" },
+  { username: "user2", password: "abcdef" },
+];
 
 function Login() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    navigate("/home");
+    const found = sampleAccounts.find(
+      acc => acc.username === username && acc.password === password
+    );
+    if (found) {
+      setError("");
+      localStorage.setItem("isLoggedIn", "true");
+      navigate("/home");
+    } else {
+      setError("Sai tài khoản hoặc mật khẩu!");
+    }
   };
 
   return (
@@ -24,15 +42,20 @@ function Login() {
           <p className="pb-2">Tên đăng nhập <span className="text-red-500">*</span></p>
           <input
             type="text"
+            value={username}
+            onChange={e => setUsername(e.target.value)}
             className="w-full border h-10 mb-5 rounded-md pl-3"
             placeholder="Tên đăng nhập"
           />
           <p className="pb-2">Mật khẩu <span className="text-red-500">*</span></p>
           <input
             type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
             className="block w-full border h-10 mb-5 pl-3 rounded-md "
             placeholder="Mật khẩu"
           />
+          {error && <div className="text-red-500 mb-2">{error}</div>}
           <Link to="/forgot" className="block mb-2 text-yellow-400">
             Quên mật khẩu ?
           </Link>
