@@ -2,6 +2,8 @@ import BackgroundLayout from "../components/BackgroundLayout";
 import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import img_hoc from "../assets/img_hoc.avif";
+
+
 function Forgot() {
   return (
     <BackgroundLayout bgImage={schoolImg}>

@@ -1,7 +1,7 @@
 function ChangePassword(){
     return(
         <div>
-            hihi
+            
         </div>
     );
 }

@@ -18,7 +18,7 @@ function Header({ onHamburgerClick }) {
           <img src={logo} alt="Logo" className="h-12 px-3 mt-3 cursor-pointer" />
           {/* Banner chỉ hiện trên md trở lên */}
           <p className="px-3 mt-3 flex-1 flex justify-center items-center text-lg font-bold hidden md:flex">
-            Chào mừng bạn đến với website luyện thi IELTS
+            Chào mừng bạn đến với website lớp học IELTS
           </p>
           <div className="flex justify-center items-center">
             <hr className="w-0.5 bg-gray-300 py-3 mt-3" />
