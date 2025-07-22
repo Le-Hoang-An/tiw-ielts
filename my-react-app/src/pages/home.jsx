@@ -90,10 +90,10 @@ function Home() {
           style={{ height: "calc(100vh - 80px)" }}
         >
           <div className="md:block hidden h-full overflow-y-auto">
-            <Sidebar onTabChange={setSelectedTab} />
+            <Sidebar onTabChange={setSelectedTab} selectedTab={selectedTab} />
           </div>
           <div className="md:hidden block h-full overflow-y-auto">
-            {showSidebar && <Sidebar onTabChange={setSelectedTab} />}
+            {showSidebar && <Sidebar onTabChange={setSelectedTab} selectedTab={selectedTab} />}
           </div>
         </div>
         {/* Main content */}
