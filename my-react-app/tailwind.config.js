@@ -49,6 +49,7 @@ export default {
       },
       colors: {
         customGold: '#847818',
+        customBg: '#FEFBEA'
       },
     },
   },

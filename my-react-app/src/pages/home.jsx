@@ -75,18 +75,24 @@ function Home() {
   return (
     <>
       <Header onHamburgerClick={() => setShowSidebar(!showSidebar)} />
-      <div className="flex pt-20 h-screen">
+      <div className="flex pt-20 h-screen bg-gray-100">
         {/* Sidebar: hiện dạng overlay trên mobile, luôn hiện trên md */}
-        <div className={`z-20 transition-transform duration-300 md:static fixed top-20 left-0 h-screen ${showSidebar ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}>
-          <div className="md:block hidden h-screen">
+        <div
+          className={`z-20 transition-transform duration-300 md:static fixed top-20 left-0 h-screen ${showSidebar ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}
+          style={{ height: "calc(100vh - 80px)" }}
+        >
+          <div className="md:block hidden h-full overflow-y-auto">
             <Sidebar onTabChange={setSelectedTab} />
           </div>
-          <div className="md:hidden block h-screen">
+          <div className="md:hidden block h-full overflow-y-auto">
             {showSidebar && <Sidebar onTabChange={setSelectedTab} />}
           </div>
         </div>
         {/* Main content */}
-        <main className="flex-1 p-4">
+        <main
+          className="flex-1 p-4 h-full overflow-y-auto"
+          style={{ height: "calc(100vh - 80px)" }}
+        >
           {renderContent()}
         </main>
       </div>
