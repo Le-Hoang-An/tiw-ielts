@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import Sidebar from "../components/sidebar";
 import ProgressPage from "./progress";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // Import các page placeholder cho các tab còn lại
 import NewsPage from "./news";
 import StatisticPage from "./statistic";
@@ -21,10 +21,18 @@ import FAQPage from "./faq";
 import ExamSetPage from "./examset";
 import ActivationCodeListPage from "./activationcodelist";
 import ReviewListPage from "./reviewlist";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [selectedTab, setSelectedTab] = useState("progress");
   const [showSidebar, setShowSidebar] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+      navigate("/login");
+    }
+  }, [navigate]);
 
   // Hàm render nội dung theo tab
   const renderContent = () => {

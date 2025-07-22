@@ -2,10 +2,15 @@ import BackgroundLayout from "../components/BackgroundLayout";
 import schoolImg from "../assets/school_img.png";
 import logo from "../assets/logo-dark.png";
 import img_hoc from "../assets/img_hoc.avif";
-import { Link } from "react-router-dom";
-import { loginclick } from "../function_js/main";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/home");
+  };
+
   return (
     <BackgroundLayout bgImage={schoolImg}>
       <div className="bg-white w-full max-w-5xl px-4 sm:px-8 md:px-10 rounded-3xl py-5 shadow-lg flex flex-col md:flex-row justify-between items-center gap-8">
@@ -16,26 +21,22 @@ function Login() {
             <img src={logo} alt="Logo" className="h-12" />
           </div>
 
-          <p className="pb-2">
-            Số điện thoại <span className="text-red-500">*</span>
-          </p>
+          <p className="pb-2">Tên đăng nhập <span className="text-red-500">*</span></p>
           <input
             type="text"
-            name="sdt"
-            id=""
             className="w-full border h-10 mb-5 rounded-md pl-3"
+            placeholder="Tên đăng nhập"
           />
-          <p className="pb-2">
-            Mật khẩu <span className="text-red-500">*</span>
-          </p>
+          <p className="pb-2">Mật khẩu <span className="text-red-500">*</span></p>
           <input
             type="password"
             className="block w-full border h-10 mb-5 pl-3 rounded-md "
+            placeholder="Mật khẩu"
           />
           <Link to="/forgot" className="block mb-2 text-yellow-400">
             Quên mật khẩu ?
           </Link>
-          <button className="w-full bg-yellow-400 py-3 rounded-xl" onClick={loginclick}>
+          <button className="w-full bg-yellow-400 py-3 rounded-xl" onClick={handleLogin}>
             Đăng nhập
           </button>
           <Link to="/register" className="flex gap-2 items-center justify-center pt-3 pb-12">
