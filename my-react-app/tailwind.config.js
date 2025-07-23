@@ -49,7 +49,10 @@ export default {
       },
       colors: {
         customGold: '#847818',
-        customBg: '#FEFBEA'
+        customBg: '#FEFBEA',
+        customIcon: '#D49C09',
+        chualam : '#f87171',
+        dabo : '#facc15'
       },
     },
   },
