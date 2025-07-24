@@ -19,8 +19,8 @@ import checked from "../assets/checked.svg";
 function ProgressPage() {
   return (
     <>
-      <div className="bg-white w-full">
-        <div className=" pt-3 pl-3">
+      <div className="bg-white w-full pl-3">
+        <div className=" pt-3">
           <button className="px-2 py-2 bg-blue-500 rounded-md mr-3">
             HN03.06 - PS758
           </button>
@@ -29,8 +29,8 @@ function ProgressPage() {
           </button>
           <hr className="mt-3" />
         </div>
-        <div className="flex items-center pt-5 pl-3 justify-between border rounded-md mt-3">
-          <div className="flex items-center justify-center">
+        <div className="flex sm:pl-3 md:pl-6 md:justify-between border shadow-lg border-blue-200 rounded-md mt-3 sm:flex-col md:flex-row bg-blue-100">
+          <div className="flex items-center md:mt-4 sm:mt-4 sm:mb-3">
             <img src={avt} alt="" className="h-16" />
             <div className="">
               <div className="flex gap-2 ml-2">
@@ -51,14 +51,14 @@ function ProgressPage() {
             </div>
           </div>
 
-          <div className="bg-customBg mr-5">
-            <p className="py-3">&bull; Giới hạn buổi nghỉ 0/0</p>
-            <p className="py-3"> &bull; Giới hạn đi trễ 0/0</p>
-            <p className="py-3"> &bull; Giới hạn bỏ bài tập 0/0</p>
+          <div className="bg-customBg py-3 px-3 sm:inline-block sm:w-max md:w-auto">
+            <p className="pt-2">&bull; Giới hạn buổi nghỉ 0/0</p>
+            <p className="pt-2">&bull; Giới hạn đi trễ 0/0</p>
+            <p className="pt-2">&bull; Giới hạn bỏ bài tập 0/0</p>
           </div>
         </div>
 
-        <div className="flex ">
+        <div className="flex md:flex-row sm:flex-col bg-gray-50 border-gray-200 shadow-md">
           <div className=" rounded-md border mt-5 mr-5">
             <div className="flex mt-5 pl-3">
               <img src={lich} alt="" />
