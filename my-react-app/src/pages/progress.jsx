@@ -175,25 +175,32 @@ function ProgressPage() {
 
             <div className="bg-customBg">
               <div className="flex items-center">
-              <img src={checked} className="bg-green-400 px-4 py-4" alt="" />
-              <div className="pl-3">
-                <p>Đã làm</p>
-                <p>10</p>
-              </div>
+                <img src={checked} className="bg-green-400 px-4 py-4" alt="" />
+                <div className="pl-3">
+                  <p>Đã làm</p>
+                  <p>10</p>
+                </div>
 
-              <img src={donghocat} className="bg-dabo px-4 py-4 ml-4" alt="" />
-              <div className="pl-3">
-                <p>Chưa làm</p>
-                <p>2</p>
-              </div>
+                <img
+                  src={donghocat}
+                  className="bg-dabo px-4 py-4 ml-4"
+                  alt=""
+                />
+                <div className="pl-3">
+                  <p>Chưa làm</p>
+                  <p>2</p>
+                </div>
 
-              <img src={cancel} className="bg-chualam px-4 py-4 ml-4" alt="" />
-              <div className="pl-3">
-                <p>Đã bỏ</p>
-                <p>1</p>
+                <img
+                  src={cancel}
+                  className="bg-chualam px-4 py-4 ml-4"
+                  alt=""
+                />
+                <div className="pl-3">
+                  <p>Đã bỏ</p>
+                  <p>1</p>
+                </div>
               </div>
-              </div>
-
             </div>
           </div>
         </div>

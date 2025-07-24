@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom event styles for timetable */
+.custom-event {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  padding: 2px 8px;
+  margin-bottom: 2px;
+  background: #fff;
+  min-width: 120px;
+  justify-content: flex-start;
+}
+.event-green {
+  border-color: #4caf50;
+  background: #e8f5e9;
+}
+.event-orange {
+  border: none;
+  background: #fff3e0;
+}
+.event-times {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.event-time-btn {
+  background: inherit;
+  border: 2px solid currentColor;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: inherit;
+  margin-right: 2px;
+  min-width: 44px;
+  text-align: center;
+}
+.event-green .event-time-btn {
+  color: #388e3c;
+  border-color: #388e3c;
+  background: #c8e6c9;
+}
+.event-orange .event-time-btn {
+  color: #f57c00;
+  border-color: #f57c00;
+  background: #ffe0b2;
+}
